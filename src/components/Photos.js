@@ -23,16 +23,16 @@ export function Photos() {
     };
     getPhotos();
   }, []);
-  
+
   return (
     <>
-      <div>
+      <h1>
         Voici les images de l'album {album.title} de l'utilisateur {user.name}:
-      </div>
+      </h1>
       <div style={{ display: "inline-block" }}>
         <ul>
           {photos.map((album, index) => (
-            <li key={index}>
+            <li key={index}  style={{marginBottom: '1rem'}}>
               <img
                 src={album.url}
               />

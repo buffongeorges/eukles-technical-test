@@ -12,7 +12,7 @@ import { Albums } from "./components/Albums";
 function App() {
   return (
     <Router>
-      <div className="App" style={{marginTop: '2rem'}}>
+      <div className="App" style={{marginTop: '2rem', marginLeft: '2rem', marginRight: '2rem'}}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/albums" element={<Albums />} />

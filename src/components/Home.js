@@ -38,11 +38,11 @@ export function Home() {
       {/* <button onClick={() => dispatch({type: "CAR"})}>Car</button>
       <h1>{counter.selectedUser}</h1>
       <button onClick={() => dispatch({type: "BIKE"})}>Bike</button> */}
-      <div>La liste des utilisateurs :</div>
+      <h1>La liste des utilisateurs :</h1>
       <div style={{display: 'inline-block'}}>
         <ul>
           {users.map((user, index) => (
-            <li key={index}><Link to={"albums"} onClick={() => dispatch({type: "EDIT_SELECTED_USER", newValue: user})}>{user.name}</Link></li>
+            <li key={index} style={{marginBottom: '1rem'}}><Link to={"albums"} onClick={() => dispatch({type: "EDIT_SELECTED_USER", newValue: user})}>{user.name}</Link></li>
           ))}
         </ul>
       </div>

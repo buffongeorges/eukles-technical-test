@@ -27,11 +27,11 @@ export function Albums() {
   }, []);
   return (
     <>
-      <div>Voici les albums de {user.name}</div>
+      <h1>Voici les albums de {user.name}</h1>
       <div style={{ display: "inline-block" }}>
         <ul>
           {albums.map((album, index) => (
-            <li key={index}>
+            <li key={index} style={{marginBottom: '1rem'}}>
               <Link
                 to={"photos"}
                 onClick={() =>
