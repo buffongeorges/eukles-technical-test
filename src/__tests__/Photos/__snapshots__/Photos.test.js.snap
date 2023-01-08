@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Photos should match snapshot 1`] = `
+Array [
+  <h1>
+    Voici les images de l'album 
+    delectus iusto et
+     de l'utilisateur 
+    Leanne Graham
+    :
+  </h1>,
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+  >
+    <ul />
+  </div>,
+]
+`;

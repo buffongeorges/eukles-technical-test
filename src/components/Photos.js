@@ -13,8 +13,6 @@ export function Photos() {
       axios
         .get(URL)
         .then((result) => {
-          console.log("result");
-          console.log(result.data);
           setPhotos(result.data);
         })
         .catch((err) => {
@@ -32,10 +30,12 @@ export function Photos() {
       <div style={{ display: "inline-block" }}>
         <ul>
           {photos.map((album, index) => (
-            <li key={index}  style={{marginBottom: '1rem'}}>
-              <img
-                src={album.url}
-              />
+            <li
+              data-testid={`photo-${index + 1}`}
+              key={index}
+              style={{ marginBottom: "1rem" }}
+            >
+              <img data-testid={`photo-content-${index + 1}`} src={album.url} />
             </li>
           ))}
         </ul>

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Albums should match snapshot 1`] = `
+Array [
+  <h1>
+    Voici les albums de 
+    Leanne Graham
+  </h1>,
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+  >
+    <ul />
+  </div>,
+]
+`;

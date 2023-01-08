@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should match snapshot 1`] = `
+Array [
+  <h1>
+    La liste des utilisateurs :
+  </h1>,
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+  >
+    <ul />
+  </div>,
+]
+`;

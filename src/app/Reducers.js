@@ -4,7 +4,6 @@ const initialState = {
 }
 
 function Reducer(state = initialState, action) {
-    console.log(action.newValue)
   switch (action.type) {
     case "EDIT_SELECTED_USER":
         return { ...state, selectedUser: action.newValue};
